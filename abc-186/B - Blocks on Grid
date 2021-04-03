@@ -1,0 +1,14 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val h, w = sc.nextInt()
+  val a = Seq.fill(h*w)(sc.nextInt())
+  var a1= Seq[Int]()
+  for(x <- a.distinct.filter(_ != a.min)){
+    val l = a.filter(_==x)
+    a1 = a1 ++ Seq(l.sum - a.min * l.size)
+  }
+  println(if(a1.isEmpty) 0 else a1.sum)
+
+}
