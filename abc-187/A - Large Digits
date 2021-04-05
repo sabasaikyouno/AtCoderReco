@@ -1,0 +1,7 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val li = List.fill(2)(sc.next())
+  println(List(li(0).map(_.asDigit).sum,li(1).map(_.asDigit).sum).max)
+}
