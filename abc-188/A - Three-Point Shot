@@ -1,0 +1,7 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val x, y = sc.nextInt()
+  if((x - y).abs < 3) println("Yes") else println("No")
+}
