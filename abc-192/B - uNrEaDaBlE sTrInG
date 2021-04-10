@@ -1,0 +1,24 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val s = sc.next()
+  var ans = "Yes"
+  var ans2 = "Yes"
+  for(i <- 0 to s.length - 1){
+    if(i % 2 == 0){
+      if(!s(i).isUpper && ans == "Yes"){
+        ans = "Yes"
+      } else {
+        ans = "No"
+      }
+    } else {
+      if(s(i).isUpper && ans2 == "Yes"){
+        ans2 = "Yes"
+      } else {
+        ans2 = "No"
+      }
+    }
+  }
+  if(ans == "Yes" && ans2 == "Yes") println("Yes") else println("No")
+}
