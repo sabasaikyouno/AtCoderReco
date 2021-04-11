@@ -1,0 +1,5 @@
+object Main extends App {
+  val sc = new java.util.Scanner(System.in)
+  val a, b = sc.nextDouble()
+  println(100 * (1 - b / a))
+}
