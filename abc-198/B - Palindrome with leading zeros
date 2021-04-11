@@ -1,0 +1,21 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  var n = sc.next()
+  var n2 = n.reverse
+  var ans = false
+  if(n == n2) {
+    ans = true
+  } else {
+    for(x <- 0 until n.length){
+      n = '0' +: n
+      n2 = n.reverse
+      if(n == n2){
+        ans = true
+      }
+    }
+    
+  }
+  println(if(ans) "Yes" else "No")
+}
