@@ -1,0 +1,8 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val ans = sc.nextInt() - sc.nextInt() * 2
+  println(if(ans >= 0) ans else 0)
+
+}
