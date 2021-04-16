@@ -1,0 +1,13 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val n = sc.nextInt()
+  val d = Seq.fill(n)(sc.nextInt())
+  val r = (1 to n).combinations(2).toList
+  var ans = Seq[Int]()
+  for(x <- r){
+    ans = d(x(0)-1) * d(x(1)-1) +: ans
+  }
+  println(ans.sum)
+}
