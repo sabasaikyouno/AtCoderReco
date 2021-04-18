@@ -1,0 +1,11 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val s = sc.next()
+  s match {
+    case "Sunny" => println("Cloudy")
+    case "Cloudy" => println("Rainy")
+    case "Rainy" => println("Sunny")  
+  }
+}
