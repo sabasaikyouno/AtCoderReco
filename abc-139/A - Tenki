@@ -1,0 +1,7 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val s, t = sc.next()
+  println(s.zip(t).filter{ case (a,b) => a == b }.length)
+}
