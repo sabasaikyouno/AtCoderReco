@@ -1,0 +1,7 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val a, b, c = sc.nextInt()
+  if((a*a) + (b*b) < (c*c)) println("Yes") else println("No")
+}
