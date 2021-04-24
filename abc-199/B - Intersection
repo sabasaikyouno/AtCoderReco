@@ -1,0 +1,24 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val n = sc.nextInt()
+  val a = List.fill(n)(sc.nextInt())
+  val b = List.fill(n)(sc.nextInt())
+  var ans = 0
+  var is = true
+  for(x <- 1 to b.max){
+    for(i <- 0 until n){
+      if(a(i) <= x && x <= b(i) && is){
+
+      } else {
+        is = false
+      }
+    }
+    if(is){
+      ans += 1
+    }
+    is = true
+  }
+  println(ans)
+}
