@@ -1,0 +1,7 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val s = sc.next()
+  println(if(s(0) == s(1) || s(1) == s(2) || s(2) == s(3)) "Bad" else "Good")
+}
