@@ -2,6 +2,6 @@ import java.util.Scanner
 
 object Main extends App {
   val sc = new Scanner(System.in)
-  val l = List.fill(3)(sc.nextInt()).sorted
-  println(l(0)+l(1))
+  val ans = List.fill(3)(sc.nextInt()).sorted.take(2).sum
+  println(ans)
 }
