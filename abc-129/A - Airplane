@@ -1,0 +1,7 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val l = List.fill(3)(sc.nextInt()).sorted
+  println(l(0)+l(1))
+}
