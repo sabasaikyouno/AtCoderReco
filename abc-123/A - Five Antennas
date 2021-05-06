@@ -1,0 +1,12 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val li = List.fill(5)(sc.nextInt())
+  val k = sc.nextInt()
+  if(li.last - li(0) <= k){
+    println("Yay!")
+  } else {
+    println(":(")
+  }
+}
