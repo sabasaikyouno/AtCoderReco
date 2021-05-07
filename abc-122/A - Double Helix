@@ -1,0 +1,12 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val b = sc.next()
+  b match {
+    case "A" => println("T")
+    case "T" => println("A")
+    case "C" => println("G")
+    case "G" => println("C")
+  }
+}
