@@ -1,0 +1,15 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val a, b, k = sc.nextInt()
+  var ans = List[Int]()
+  for(x <- 1 to a.max(b)){
+    if(a % x == 0){
+      if(b % x == 0){
+        ans = ans :+ x
+      }
+    }
+  }
+  println(ans.reverse(k-1))
+}
