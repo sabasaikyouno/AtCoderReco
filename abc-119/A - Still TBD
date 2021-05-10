@@ -1,0 +1,12 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val s = sc.next()
+  if(s(5) == '0' && s(6).toString.toInt <= 4){
+    println("Heisei")
+  } else {
+    println("TBD")
+  }
+  
+}
