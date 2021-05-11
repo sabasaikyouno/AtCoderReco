@@ -1,0 +1,15 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val n = sc.nextInt()
+  val x = sc.nextInt()*100
+  val vp = List.fill(n)(sc.nextInt(),sc.nextInt()).map{case (v,p) => v * p}
+  var ans = -1
+  for(i <- 1 to vp.length){
+    if(vp.take(i).sum > x && ans == -1) {
+      ans = i
+    }
+  }
+  println(ans)
+}
