@@ -1,0 +1,12 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val d = sc.nextInt()
+  d match {
+    case 25 => println("Christmas")
+    case 24 => println("Christmas Eve")
+    case 23 => println("Christmas Eve Eve")
+    case 22 => println("Christmas Eve Eve Eve")
+  }
+}
