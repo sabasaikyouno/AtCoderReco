@@ -1,0 +1,12 @@
+import java.util.Scanner
+
+
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  var n, t, a = sc.nextInt
+  var h = Seq.fill(n)(sc.nextInt())
+
+  println(h.indexOf(h.minBy(h1 => (t - h1 * 0.006 - a).abs)) + 1)
+
+}
