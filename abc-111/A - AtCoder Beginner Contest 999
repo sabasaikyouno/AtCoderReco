@@ -1,0 +1,15 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val n = sc.next()
+  var ans = ""
+  for(x <- 0 until 3){
+    if(n(x).toString == "1"){
+      ans += "9"
+    } else {
+      ans += "1"
+    }
+  }
+  println(ans)
+}
