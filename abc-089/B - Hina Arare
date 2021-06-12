@@ -1,0 +1,8 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val n = sc.nextInt()
+  val s = List.fill(n)(sc.next()).filter(_=="Y").length
+  if(s == 0) println("Three") else println("Four")
+}
