@@ -1,0 +1,8 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val abc = List.fill(3)(sc.nextInt()).sorted
+  val k = sc.nextInt()
+  println(abc(0)+abc(1)+abc(2)*Math.pow(2, k).toInt)
+}
