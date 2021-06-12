@@ -1,0 +1,10 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val n = sc.nextInt()
+  var x = sc.nextInt()
+  val m = List.fill(n)(sc.nextInt())
+  x = x - m.sum
+  println(m.length + x/m.min)
+}
