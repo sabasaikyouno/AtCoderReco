@@ -1,0 +1,21 @@
+import java.util.Scanner
+
+
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  var n, t = sc.nextInt()
+  var x = -1
+  var y = -1
+  var z = -1
+
+  for(a <- 0 to n){
+    for(b <- 0 to n){
+      var c: Int = n - a - b
+      var total = 10000*a + 5000*b + 1000*c
+      if(total == t && c >= 0) {x=a;y=b;z=c;}
+    }
+  }
+  println(s"$x $y $z")
+
+}
