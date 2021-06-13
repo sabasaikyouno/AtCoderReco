@@ -1,0 +1,7 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  var s = sc.next()
+  println(s"2018/${s.drop(5)}")
+}
