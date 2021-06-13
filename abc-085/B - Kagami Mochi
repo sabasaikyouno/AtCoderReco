@@ -1,0 +1,11 @@
+import java.util.Scanner
+
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  var n = sc.nextInt()
+  var d = Seq.fill(n)(sc.nextInt()).distinct.length
+  println(d)
+
+
+}
