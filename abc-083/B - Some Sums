@@ -1,0 +1,18 @@
+import java.util.Scanner
+
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  var n, a, b = sc.nextInt()
+  var ans = 0
+
+  for(i <- 1 to n){
+    var k = i.toString.map(_.asDigit).sum
+    if(k >= a && k <= b){
+      ans = ans + i
+    }
+  }
+
+println(ans)
+
+}
