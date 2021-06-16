@@ -1,0 +1,8 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val a, b = sc.nextDouble()
+  val ans = (a+b)/2
+  println(Math.ceil(ans).toInt)
+}
