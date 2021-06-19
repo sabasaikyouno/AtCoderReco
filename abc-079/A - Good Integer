@@ -1,0 +1,13 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val n = sc.next()
+  if(n.take(3).distinct.length == 1){
+    println("Yes")
+  } else if(n.takeRight(3).distinct.length == 1){
+    println("Yes")
+  } else {
+    println("No")
+  }
+}
