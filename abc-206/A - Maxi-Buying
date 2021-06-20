@@ -1,0 +1,13 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val n = sc.nextInt()
+  if((n*1.08).toInt == 206){
+    println("so-so")
+  } else if((n*1.08).toInt < 206){
+    println("Yay!")
+  } else {
+    println(":(")
+  }
+}
