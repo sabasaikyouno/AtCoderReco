@@ -1,0 +1,13 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val x, y = BigInt(sc.next(),16)
+  if(x<y) {
+    println("<")
+  } else if(x>y) {
+    println(">")
+  } else {
+    println("=")
+  }
+}
