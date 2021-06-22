@@ -1,0 +1,7 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val c1, c2 = sc.next()
+  if(c1 == c2.reverse) println("YES") else println("NO")
+}
