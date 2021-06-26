@@ -1,0 +1,18 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val a, b, c, d = sc.nextInt()
+  var truefalse = true
+  var blue:BigInt = a
+  var red:BigInt = 0
+  var count = -1
+  for(x <- 1 to 100000){
+    blue += b
+    red += c
+    if(blue <= red*d && count == -1){
+      count = x
+    }
+  }
+  println(count)
+}
