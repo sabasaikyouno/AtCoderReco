@@ -1,7 +1,0 @@
-import java.util.Scanner
-
-object Main extends App {
-  val sc = new Scanner(System.in)
-  val n = sc.next()
-  if(n(0) == '9' || n(1) == '9') println("Yes") else println("No")
-}
