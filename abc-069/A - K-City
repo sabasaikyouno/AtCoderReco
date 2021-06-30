@@ -1,0 +1,7 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val n, m = sc.nextInt()
+  println((n-1)*(m-1))
+}
