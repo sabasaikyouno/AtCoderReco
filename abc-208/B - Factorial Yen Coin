@@ -1,0 +1,19 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val p = sc.nextInt()
+  var ex = 0
+  for(x <- 1 to 10){
+    if(p >= (1 to x).product){
+      ex = x
+    }
+  }
+  var tmp = p
+  var count = 0
+  for(x <- 0 until ex) {
+    count += tmp/(1 to ex-x).product
+    tmp = tmp%(1 to ex-x).product
+  }
+  println(count)
+}
