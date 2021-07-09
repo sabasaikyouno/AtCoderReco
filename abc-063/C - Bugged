@@ -1,0 +1,11 @@
+import java.util.Scanner
+
+import scala.+:
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val n = sc.nextInt()
+  val s = List.fill(n)(sc.nextInt())
+  val ten = s.filter(_%10!=0)
+  if(s.sum % 10 != 0) println(s.sum) else if(ten.isEmpty) println(0) else println(s.sum - ten.min)
+}
