@@ -1,0 +1,9 @@
+import java.util.Scanner
+
+import scala.+:
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val s = sc.next()
+  if(s.distinct.length == s.length) println("yes") else println("no")
+}
