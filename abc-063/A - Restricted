@@ -1,0 +1,9 @@
+import java.util.Scanner
+
+import scala.+:
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val a, b = sc.nextInt()
+  if(a+b >= 10) println("error") else println(a+b)
+}
