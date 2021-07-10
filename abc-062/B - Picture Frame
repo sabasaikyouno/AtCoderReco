@@ -1,0 +1,13 @@
+import java.util.Scanner
+
+import scala.+:
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val h, w = sc.nextInt()
+  println("#"*w+"##")
+  for(i <- 1 to h){
+    println(s"#${sc.next()}#")
+  }
+  println("#"*w+"##")
+}
