@@ -1,0 +1,8 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val n, x = sc.nextInt()
+  val a = List.fill(n)(sc.nextInt())
+  println(if(a.sum-(n/2) <= x) "Yes" else "No")
+}
