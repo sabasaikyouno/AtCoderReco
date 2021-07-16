@@ -1,0 +1,7 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val a, b = sc.next()
+  if(a==b) println("H") else println("D")
+}
