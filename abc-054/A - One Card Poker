@@ -1,0 +1,11 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val a, b = sc.nextInt()
+  if(a==b) println("Draw") else
+  if(a == 1) println("Alice") else
+  if(b == 1) println("Bob") else
+  if(a>b) println("Alice") else
+  println("Bob")
+}
