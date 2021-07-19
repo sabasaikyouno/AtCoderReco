@@ -1,0 +1,7 @@
+import java.util.Scanner
+
+object Main extends App {
+  val sc = new Scanner(System.in)
+  val x = sc.nextInt()
+  if(x < 1200) println("ABC") else println("ARC")
+}
